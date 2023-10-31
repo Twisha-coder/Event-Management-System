@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles/signup.css" />
+    <script
+      src="https://kit.fontawesome.com/a18e5b9e02.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/scripts/signup.js"></script>
+
+    <title>Signup</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="login-hint">
+        <div class="content_signin">
+          <div class="lines" id="content1">One of Us?</div>
+          <div class="lines" id="content2">
+            If you already have an account, just log in. We've missed you!
+          </div>
+          <div class="lines" id="content3">
+            <a href="/login">
+              <button type="button" id="login-btn">Log In</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="signup-section">
+        <div class="lines" id="signup-header">Create Free Account</div>
+        <div class="lines" id="signup-via-soical-media">
+          Sign up using social networks
+        </div>
+        <div class="content4">
+          <div class="facebook social">
+            <a href="#">
+              <i class="fa-brands fa-facebook-f login_links"></i>
+            </a>
+          </div>
+          <div class="google social">
+            <a href="#">
+              <i class="fa-brands fa-google login_links"></i>
+            </a>
+          </div>
+          <div class="linkedin social">
+            <a href="#">
+              <i class="fa-brands fa-linkedin-in login_links"></i>
+            </a>
+          </div>
+        </div>
+        <div class="lines" id="or-division">or</div>
+        <hr />
+        <div class="form" id="signup-form">
+          <div class="lines">
+            <input
+              type="text"
+              placeholder="Name"
+              id="name"
+              required
+              minlength="1"
+            />
+          </div>
+          <div class="lines">
+            <input
+              type="text"
+              placeholder="Surname"
+              id="surname"
+              required,
+              minlength="1"
+            />
+          </div>
+          <div class="lines" pla>
+            <input
+              type="email"
+              placeholder="Email"
+              id="email"
+              required
+              minlength="11"
+            />
+          </div>
+          <div class="lines">
+            <input
+              type="password"
+              id="password"
+              placeholder="password"
+              required
+              minlength="8"
+            />
+          </div>
+        </div>
+
+        <div class="lines" id="items9">
+          <input type="checkbox" id="check" />I have read the
+          <a href="#"><span class="terms">Tearms & Conditions</span></a>
+        </div>
+
+        <div class="lines" id="signup-header0">
+          <button type="submit" id="signup-btn">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

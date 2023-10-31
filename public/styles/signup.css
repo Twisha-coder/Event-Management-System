@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Noto+Sans:wght@300&display=swap");
+
+:root {
+  font-family: "Noto Sans", sans-serif;
+  --left-bar-colour: #000000;
+  --nav-colour: #151515;
+  --body-colour: #1b1b1b;
+  --text-colour: #ffffff;
+  --btn-bg-colour: #ffffff;
+  --btn-bg-text-colour: #000000;
+  --sq-card-bg-colour: #222222;
+  --sq-card-bg-hover-colour: #2c2c2c;
+  --btn-hover-text-colour: #1db954;
+  --left-hover-text-colour: #1db954;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+#login-hint {
+  overflow: hidden;
+  height: 100vh;
+  width: 30vw;
+  background-image: linear-gradient(
+    253deg,
+    rgba(3, 3, 182, 0.507),
+    rgba(122, 2, 104, 0.644) 100%
+  );
+}
+
+#signup-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 70vw;
+  text-align: center;
+  background-color: var(--btn-bg-colour);
+}
+
+.circle1 {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  top: 70%;
+  left: 90%;
+  background-image: linear-gradient(253deg, #5cd2e23d 0, #5af5900e 100%);
+}
+
+.circle2 {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  top: 10%;
+  left: 74%;
+  background-image: linear-gradient(253deg, #5cd2e23d 0, #5af5900e 100%);
+}
+
+.login_links {
+  color: rgb(255, 255, 255);
+  position: relative;
+  top: 2px;
+}
+
+.content_signin {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+  align-items: center;
+  position: absolute;
+  top: 0%;
+  text-align: center;
+  justify-content: center;
+}
+
+#content1 {
+  font-size: 2rem;
+  font-weight: bolder;
+  font-family: "Nunito", sans-serif;
+  color: var(--btn-bg-colour);
+}
+
+#content2 {
+  padding: 15px 20px;
+  font-size: 1.19rem;
+  letter-spacing: 0.02rem;
+  font-family: "Nunito", sans-serif;
+  color: var(--btn-bg-colour);
+}
+
+#content3 {
+  width: 100%;
+}
+
+button[type="button"] {
+  padding: 15px 0;
+  border-radius: 30px;
+  background-color: #ffffff;
+  border: none;
+  width: 60%;
+  letter-spacing: 0.02rem;
+  font-size: 16px;
+  font-family: "Heebo", sans-serif;
+}
+
+button[type="button"]:hover {
+  color: #00b2d6;
+  transition: 0.2s linear;
+}
+
+.content4 {
+  display: flex;
+  margin: 10px 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.facebook:hover {
+  background-color: #1877f2;
+  transition: 0.3s ease;
+}
+
+.google:hover {
+  background-color: rgb(223, 77, 59);
+  transition: 0.3s ease;
+}
+
+.linkedin:hover {
+  background-color: #0a66c2;
+  transition: 0.3s ease;
+}
+
+#signup-header {
+  font-size: 3rem;
+  font-weight: bolder;
+  font-family: "Nunito", sans-serif;
+  color: var(--btn-bg-text-colour);
+  margin-bottom: 10px;
+}
+
+#items2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #292929;
+  margin-bottom: 10px;
+}
+
+#or-division {
+  position: relative;
+  top: -10px;
+  margin: 10px 0;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  height: 20px;
+  width: 50px;
+  background-color: var(--btn-bg-colour);
+}
+
+hr {
+  position: relative;
+  top: -3%;
+  width: 80%;
+  background-color: #c7c7c7;
+  border: none;
+  height: 1px;
+  z-index: 0;
+}
+
+.form {
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 15px;
+  margin: 13px 0;
+  border: 1px solid #951db9;
+  border-radius: 50px;
+  width: 80%;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+#items9 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#signup-header0 {
+  width: 80%;
+}
+
+.terms {
+  color: blue;
+}
+
+button[type="submit"] {
+  padding: 15px 0;
+  border-radius: 30px;
+  margin-top: 15px;
+  background-color: plum;
+  border: none;
+  width: 40%;
+  letter-spacing: 0.02rem;
+  font-size: 16px;
+  font-family: "Heebo", sans-serif;
+}
+
+::placeholder {
+  font-size: 0.78rem;
+  letter-spacing: 0.07rem;
+  font-weight: bolder;
+  color: #757575;
+}
+
+button[type="submit"]:hover {
+  color: var(--btn-bg-colour);
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+
+#login-btn {
+  transition: all 1.5s;
+}
+
+.invisible {
+  opacity: 0.3;
+}
+
+.highlight {
+  border: 3px solid royalblue !important;
+  scale: 1.5;
+}
